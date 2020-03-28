@@ -1,5 +1,6 @@
 import React from 'react';
 import '../src/assets/css/App.css';
+import CurrentWeather from './components/CurrentWeather';
 const API_KEY = 'AYht5xq9k0cECs3SFaOkgbQzZASinW8a';
 function App() {
   const content = (
@@ -8,6 +9,7 @@ function App() {
         <div className="search-box">
           {' '}
           <input className="search-bar" type="text" placeholder="Search..." />
+          <CurrentWeather apiKey={API_KEY} />
         </div>
       </main>
     </div>
