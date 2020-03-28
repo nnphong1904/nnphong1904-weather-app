@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import '../src/assets/css/App.css';
-
+const API_KEY = 'AYht5xq9k0cECs3SFaOkgbQzZASinW8a';
 function App() {
-  return (
+  const content = (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <div className="search-box">
+          {' '}
+          <input className="search-bar" type="text" placeholder="Search..." />
+        </div>
+      </main>
     </div>
   );
+  return content;
 }
 
 export default App;
