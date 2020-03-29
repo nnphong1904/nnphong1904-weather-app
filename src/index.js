@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Titillium Web:300,400,700', 'sans-serif'],
+    families: ['Montserrat:400,500', 'sans-serif'],
   },
 });
 ReactDOM.render(

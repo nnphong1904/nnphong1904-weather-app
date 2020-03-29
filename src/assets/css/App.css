@@ -3,6 +3,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 body,
 #root,
 .App {
@@ -32,7 +35,7 @@ main {
 	padding: 25px;
 }
 .search-box {
-	margin: 0 0 75px;
+	margin: 0 0 60px;
 }
 .search-box .search-bar {
 	display: inline-block;
