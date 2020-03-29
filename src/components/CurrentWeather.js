@@ -41,6 +41,7 @@ function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState();
   const [location, setLocation] = useState('');
   useEffect(() => {
+    // fetch data of current position when open app first time
     if (searchText === '') {
       navigator.geolocation.getCurrentPosition((position) => {
         fetch(
