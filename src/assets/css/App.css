@@ -5,11 +5,11 @@
 }
 body {
 	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
 }
-body,
 #root,
 .App {
-	height: 100vh;
+	height: 100%;
 	background-image: url('../images//cold-bg.jpg');
 	background-size: cover;
 	background-position: bottom;
@@ -20,7 +20,7 @@ body,
 	background-image: url('../images/warm-bg.jpg');
 }
 main {
-	height: 100vh;
+	height: 100%;
 	background-image: -webkit-gradient(
 		linear,
 		left top, left bottom,
