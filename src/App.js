@@ -8,7 +8,6 @@ function App() {
   const [searchValue, setSearchValue] = useState('');
   const [searchText, setSearchText] = useState('');
   const [currentWeatherData, setCurrentWeatherData] = useState({});
-  const [isColdBg, setIsColdBg] = useState(true);
   // extra function
   const fetch = async (url) => {
     // fetch function for fetching data and return promise
@@ -49,7 +48,11 @@ function App() {
   useEffect(() => {
     console.log('useEffect running...');
     if (searchText === '') {
+      if (navigator.geolocation) {
+        console.log('yes');
+      }
       navigator.geolocation.getCurrentPosition((position) => {
+        console.log(position);
         // get the location key
         fetch(
           `https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${API_KEY}&q=${position.coords.latitude}%2C${position.coords.longitude}`
@@ -65,6 +68,7 @@ function App() {
           });
         });
       });
+      console.log('fetching done!');
     } else {
       // fetch data to key location key by the value typed in search box
       fetch(
