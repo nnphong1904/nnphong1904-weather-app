@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/CurrentWeather.css';
 function CurrentWeather(props) {
-  console.log(data);
+  const { data } = props;
   const content = (
     <>
       {Object.entries(data).length !== 0 && (

@@ -64,7 +64,6 @@ function App() {
           });
         });
       });
-    } else {
     }
   }, [searchText]);
   // handle event of search box
